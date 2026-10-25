@@ -1,4 +1,4 @@
-# Annahmen hinter dem one-pager
+# Assumption
 
 Annahmen, die wahr sein müssen, damit die Schritte in „How" die Tabelle in „What" liefern.
 Sortiert nach Wichtigkeit (hoch zuerst), bei gleicher Wichtigkeit nach Belegen (wenig zuerst).
