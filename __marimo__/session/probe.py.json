@@ -1,0 +1,74 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "ce4194fff5fe8b0eebb7a09769bc0473",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "59e969654fac7430e7c4b41a6adae56b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='MJUe-0' random-id='5e792a8a-ecf0-a2fb-808c-45d060cb99d8'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;FK_STANDORT&#92;&quot;:5,&#92;&quot;DATUM&#92;&quot;:&#92;&quot;2009-12-02T00:00&#92;&quot;,&#92;&quot;VELO_IN&#92;&quot;:2,&#92;&quot;VELO_OUT&#92;&quot;:3,&#92;&quot;FUSS_IN&#92;&quot;:null,&#92;&quot;FUSS_OUT&#92;&quot;:null,&#92;&quot;OST&#92;&quot;:2682933,&#92;&quot;NORD&#92;&quot;:1248821,&#92;&quot;JAHR&#92;&quot;:2009},{&#92;&quot;FK_STANDORT&#92;&quot;:5,&#92;&quot;DATUM&#92;&quot;:&#92;&quot;2009-12-02T00:15&#92;&quot;,&#92;&quot;VELO_IN&#92;&quot;:0,&#92;&quot;VELO_OUT&#92;&quot;:2,&#92;&quot;FUSS_IN&#92;&quot;:null,&#92;&quot;FUSS_OUT&#92;&quot;:null,&#92;&quot;OST&#92;&quot;:2682933,&#92;&quot;NORD&#92;&quot;:1248821,&#92;&quot;JAHR&#92;&quot;:2009},{&#92;&quot;FK_STANDORT&#92;&quot;:5,&#92;&quot;DATUM&#92;&quot;:&#92;&quot;2009-12-02T00:30&#92;&quot;,&#92;&quot;VELO_IN&#92;&quot;:0,&#92;&quot;VELO_OUT&#92;&quot;:0,&#92;&quot;FUSS_IN&#92;&quot;:null,&#92;&quot;FUSS_OUT&#92;&quot;:null,&#92;&quot;OST&#92;&quot;:2682933,&#92;&quot;NORD&#92;&quot;:1248821,&#92;&quot;JAHR&#92;&quot;:2009},{&#92;&quot;FK_STANDORT&#92;&quot;:5,&#92;&quot;DATUM&#92;&quot;:&#92;&quot;2009-12-02T00:45&#92;&quot;,&#92;&quot;VELO_IN&#92;&quot;:0,&#92;&quot;VELO_OUT&#92;&quot;:2,&#92;&quot;FUSS_IN&#92;&quot;:null,&#92;&quot;FUSS_OUT&#92;&quot;:null,&#92;&quot;OST&#92;&quot;:2682933,&#92;&quot;NORD&#92;&quot;:1248821,&#92;&quot;JAHR&#92;&quot;:2009},{&#92;&quot;FK_STANDORT&#92;&quot;:5,&#92;&quot;DATUM&#92;&quot;:&#92;&quot;2009-12-02T01:00&#92;&quot;,&#92;&quot;VELO_IN&#92;&quot;:0,&#92;&quot;VELO_OUT&#92;&quot;:0,&#92;&quot;FUSS_IN&#92;&quot;:null,&#92;&quot;FUSS_OUT&#92;&quot;:null,&#92;&quot;OST&#92;&quot;:2682933,&#92;&quot;NORD&#92;&quot;:1248821,&#92;&quot;JAHR&#92;&quot;:2009}]&quot;' data-total-rows='5' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;FK_STANDORT&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;DATUM&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;VELO_IN&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;VELO_OUT&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;FUSS_IN&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;FUSS_OUT&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;OST&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;NORD&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;JAHR&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "9b568beaa4894d9f355c2b8e8012e024",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='471d7c30-46f2-c22d-ac8a-2a0842964321'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;JAHR&#92;&quot;:2009,&#92;&quot;zaehlstellen&#92;&quot;:1},{&#92;&quot;JAHR&#92;&quot;:2010,&#92;&quot;zaehlstellen&#92;&quot;:11},{&#92;&quot;JAHR&#92;&quot;:2011,&#92;&quot;zaehlstellen&#92;&quot;:11},{&#92;&quot;JAHR&#92;&quot;:2012,&#92;&quot;zaehlstellen&#92;&quot;:12},{&#92;&quot;JAHR&#92;&quot;:2013,&#92;&quot;zaehlstellen&#92;&quot;:23},{&#92;&quot;JAHR&#92;&quot;:2014,&#92;&quot;zaehlstellen&#92;&quot;:34},{&#92;&quot;JAHR&#92;&quot;:2015,&#92;&quot;zaehlstellen&#92;&quot;:49},{&#92;&quot;JAHR&#92;&quot;:2016,&#92;&quot;zaehlstellen&#92;&quot;:49},{&#92;&quot;JAHR&#92;&quot;:2017,&#92;&quot;zaehlstellen&#92;&quot;:56},{&#92;&quot;JAHR&#92;&quot;:2018,&#92;&quot;zaehlstellen&#92;&quot;:56}]&quot;' data-total-rows='18' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;JAHR&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;zaehlstellen&quot;,[&quot;integer&quot;,&quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "26e44bad0d9d7992c62c0b1d81e3d7cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "{\"jahre\": 18, \"zaehlstellen_gesamt\": 171, \"in_allen_jahren\": 0, \"anteil\": \"text/plain+float:0.0\"}"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "3dfdec71ac05aa876fbb80672ac97cc4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='a1bc4d43-ff18-7958-4daa-a557b8b68dc1'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;jahre&#92;&quot;:1,&#92;&quot;zaehlstellen&#92;&quot;:47},{&#92;&quot;jahre&#92;&quot;:2,&#92;&quot;zaehlstellen&#92;&quot;:38},{&#92;&quot;jahre&#92;&quot;:3,&#92;&quot;zaehlstellen&#92;&quot;:14},{&#92;&quot;jahre&#92;&quot;:4,&#92;&quot;zaehlstellen&#92;&quot;:17},{&#92;&quot;jahre&#92;&quot;:5,&#92;&quot;zaehlstellen&#92;&quot;:9},{&#92;&quot;jahre&#92;&quot;:6,&#92;&quot;zaehlstellen&#92;&quot;:16},{&#92;&quot;jahre&#92;&quot;:7,&#92;&quot;zaehlstellen&#92;&quot;:9},{&#92;&quot;jahre&#92;&quot;:8,&#92;&quot;zaehlstellen&#92;&quot;:5},{&#92;&quot;jahre&#92;&quot;:9,&#92;&quot;zaehlstellen&#92;&quot;:7},{&#92;&quot;jahre&#92;&quot;:10,&#92;&quot;zaehlstellen&#92;&quot;:4}]&quot;' data-total-rows='11' data-total-columns='2' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;jahre&quot;,[&quot;integer&quot;,&quot;u32&quot;]],[&quot;zaehlstellen&quot;,[&quot;integer&quot;,&quot;u32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
