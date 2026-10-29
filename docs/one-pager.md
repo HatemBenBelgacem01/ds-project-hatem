@@ -8,9 +8,9 @@
 
 ## What
 
-**Was der Leser bekommt:** Eine Tabelle mit einer Zeile pro Zählstelle und Jahr, darüber ein Satz, der die Antwort für die Stadt nennt.
+**Was der Leser bekommt:** Eine Tabelle mit einer Zeile pro Ort und Jahr, darüber ein Satz, der die Antwort für die Stadt nennt.
 
-**Einheit des Ergebnisses:** Ein Ort (Ort = Koordinatenpaar OST/NORD), nicht eine Zählstellen-ID. Mehrere IDs am selben Ort zählen als ein Ort.
+**Einheit des Ergebnisses:** Änderung 2026-10-08: Die Einheit ist der Ort (Koordinatenpaar OST/NORD), nicht die Zählstellen-ID. Grund: Ein Ort bekommt im Lauf der Jahre neue IDs. Nach ID hält keine Zählstelle durch alle Jahre, nach Ort sind es 11 % der Velo-Orte. Siehe docs/log.md.
 
 **Vergleich:** Zwei Jahre, 2019 und 2025, jeweils ein volles Kalenderjahr. Die Regeln für „vergleichbar", „gewachsen" und „ja" sind offen und werden vor der ersten Auswertung festgelegt.
 
