@@ -57,3 +57,7 @@ Mine:
 Checks passed:
 - Tests green (7 passed).
 - Failure check: the test fails for three broken versions of `place_year_table` (extra column, renamed column, one row instead of none) and passes for the real one.
+
+## Decision · 2026-10-31 · growing and shrinking places
+
+Ein Ort ist gewachsen oder geschrumpft, wenn sich die Anzahl Fahrräder und Fussgänger reduzieren oder erhöhen. Fahrräder und Fussgänger werden zusammengezählt, gegenläufige Änderungen werden gegeneinander verrechnet. Jede kleine Änderung zählt, es gibt keine Schwelle. Gemessen wird die Anzahl als Summe pro Jahr. Die Kategorie „unverändert“ entfällt. Ist die Summe genau gleich, bekommt der Ort keine Einstufung, sondern wird mit dem Grund „Summe gleich“ ausgewiesen.
