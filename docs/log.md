@@ -61,3 +61,7 @@ Checks passed:
 ## Decision · 2026-10-31 · growing and shrinking places
 
 Ein Ort ist gewachsen oder geschrumpft, wenn sich die Anzahl Fahrräder und Fussgänger reduzieren oder erhöhen. Fahrräder und Fussgänger werden zusammengezählt, gegenläufige Änderungen werden gegeneinander verrechnet. Jede kleine Änderung zählt, es gibt keine Schwelle. Gemessen wird die Anzahl als Summe pro Jahr. Die Kategorie „unverändert“ entfällt. Ist die Summe genau gleich, bekommt der Ort keine Einstufung, sondern wird mit dem Grund „Summe gleich“ ausgewiesen.
+
+## Decision · 2026-10-31 · repository settings
+
+Ruleset „Protect main“ (ID 26285361): Änderungen an main nur über Pull Request, Prüfung „tests“ muss grün sein, 0 Freigaben, keine Ausnahmen, Force-Push und Löschen blockiert. Automatisches Löschen gemergter Branches ist aus, siehe unten.
