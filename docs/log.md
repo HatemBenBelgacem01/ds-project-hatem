@@ -22,3 +22,22 @@ Offen: Es ist noch nicht festgelegt, wann neuere oder jährliche Daten benötigt
 ## Decision · 2026-10-08 · one-sided counts and data range
 
 Bei Datensätzen, die nur einen der Werte VELO_IN oder VELO_OUT enthalten, wird die fehlende Seite als 0 gewertet, da manche Zähleinrichtungen nur eine Fahrtrichtung erfassen. Die Testdatei (`tests/fixtures/counts_small.csv`) enthält einen entsprechenden Eintrag, der dies absichert. Die Datei endet am 6. Juni 2026; die Einschränkung aus dem Eintrag oben gilt weiterhin. Bekannte Einschränkung: Bei einem Wechsel der Standort-ID (ID-Switch) wird ein einzelnes Viertelstundenintervall unter zwei verschiedenen Standort-IDs erfasst und folglich doppelt gezählt (Eintrag 2682278/1248325, 08.09.2017 00:00 Uhr, Standort-IDs 1997 und 2319). Dieser Zustand bleibt vorerst unverändert.
+
+## Decision · 2026-10-31 · end date of the source file
+
+Die Datei aus dem Portal in data/raw/ (Download am 29. Oktober 2026) endet am 26. Oktober 2026. Die frühere Datei in data/ endet am 6. Juni 2026. Das Jahr 2026 ist in beiden Dateien nicht vollständig.
+
+## AI use · 2026-10-31 · load and derive steps
+
+Delegated: the load and derive steps of uv run build, the functions and the test code.
+
+Mine: 
+- Geschäftsregel „Fehlende Richtung“: Fehlende Richtungsangaben werden explizit als 0 gezählt (kein Imputieren, kein Verwurf).
+- Definition der Einheit „Ort“: Ein Ort ist strikt durch das Koordinatenpaar OST/NORD definiert, nicht über die Zählstellen-ID.
+- Fixture `tests/fixtures/counts_small.csv`: Testdatensatz manuell zusammengestellt, inklusive des gezielten Randfalls mit 5 Velos in nur eine Richtung.
+- Erwartete Zielwerte (Ground Truth): Referenztabelle von Hand berechnet (5 Velos pro Tag an 2 Tagen, 6 Velos an 1 Tag, 15 Velos an 1 Tag).
+
+Checks passed:
+- Tests green, including the failure check.
+- Same table after deleting data/derived and rebuilding.
+- 44 places, 5 of them reporting in every year from 2010 to 2025, as in the notebook.
