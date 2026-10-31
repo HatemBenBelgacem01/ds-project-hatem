@@ -65,3 +65,7 @@ Ein Ort ist gewachsen oder geschrumpft, wenn sich die Anzahl Fahrräder und Fuss
 ## Decision · 2026-10-31 · repository settings
 
 Ruleset „Protect main“ (ID 26285361): Änderungen an main nur über Pull Request, Prüfung „tests“ muss grün sein, 0 Freigaben, keine Ausnahmen, Force-Push und Löschen blockiert. Automatisches Löschen gemergter Branches ist aus, siehe unten.
+
+## Decision · 2026-10-31 · delete merged branches automatically
+
+Die Einstellung „Automatically delete head branches“ ist eingeschaltet (delete_branch_on_merge: true). Gemergte Branches werden auf GitHub automatisch gelöscht. Damit korrigiert dieser Eintrag die Aussage „Automatisches Löschen gemergter Branches ist aus“ im Eintrag „repository settings“ vom selben Tag.
