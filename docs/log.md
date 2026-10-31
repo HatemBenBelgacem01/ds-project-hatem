@@ -56,3 +56,4 @@ Mine:
 
 Checks passed:
 - Tests green (7 passed).
+- Failure check: the test fails for three broken versions of `place_year_table` (extra column, renamed column, one row instead of none) and passes for the real one.
