@@ -45,3 +45,15 @@ Checks passed:
 ## Decision · 2026-10-31 · comparable years
 
 Verglichen werden 2019 und 2025. Vergleichbar sind die Orte mit Velo-Daten in beiden Jahren (17 von 32 bzw. 25 Orten). Die übrigen Orte werden im Ergebnis mit Grund ausgewiesen.
+
+## AI use · 2026-10-31 · empty table test
+
+Delegated: the test code for `place_year_table` on an empty table (`tests/test_derive.py`).
+
+Mine:
+- Vorgabe: Eingabe ist die Kopfzeile der bestehenden Fixture, keine neue Datei.
+- Erwartung: Eine leere Tabelle mit den Rohdaten-Spalten ergibt eine leere Tabelle mit den fünf Ausgabespalten.
+
+Checks passed:
+- Tests green (7 passed).
+- Failure check: the test fails for three broken versions of `place_year_table` (extra column, renamed column, one row instead of none) and passes for the real one.
