@@ -22,3 +22,12 @@ def test_place_year_table_on_fixture():
         }
     )
     assert_frame_equal(table, expected, check_dtypes=False)
+
+
+def test_place_year_table_on_empty_table_returns_empty_table():
+    empty = parse_counts(pl.read_csv(FIXTURE).head(0))
+
+    table = place_year_table(empty)
+
+    assert table.height == 0
+    assert table.columns == ["OST", "NORD", "year", "days_with_bikes", "bikes_per_day"]
