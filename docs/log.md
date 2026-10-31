@@ -41,3 +41,7 @@ Checks passed:
 - Tests green, including the failure check.
 - Same table after deleting data/derived and rebuilding.
 - 44 places, 5 of them reporting in every year from 2010 to 2025, as in the notebook.
+
+## Decision · 2026-10-31 · comparable years
+
+Verglichen werden 2019 und 2025. Vergleichbar sind die Orte mit Velo-Daten in beiden Jahren (17 von 32 bzw. 25 Orten). Die übrigen Orte werden im Ergebnis mit Grund ausgewiesen.
