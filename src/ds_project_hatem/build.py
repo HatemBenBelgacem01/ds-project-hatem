@@ -4,11 +4,16 @@ import argparse
 from pathlib import Path
 
 from ds_project_hatem.answer import answer
+from ds_project_hatem.days import days
 from ds_project_hatem.derive import derive
 from ds_project_hatem.download import RAW_DIR, URL, download
 from ds_project_hatem.load import load
 
 DERIVED_DIR = Path("data/derived")
+WEATHER_URLS = [
+    f"https://data.stadt-zuerich.ch/dataset/ugz_meteodaten_tagesmittelwerte/download/ugz_ogd_meteo_d1_{year}.csv"
+    for year in (2019, 2025)
+]
 
 
 def main() -> None:
@@ -20,3 +25,6 @@ def main() -> None:
     counts = load(raw, DERIVED_DIR / "counts.parquet", force=args.force)
     place_year = derive(counts, DERIVED_DIR / "place_year.parquet", force=args.force)
     answer(place_year, DERIVED_DIR / "answer.parquet", force=args.force)
+
+    weather = [download(url, RAW_DIR, force=args.force) for url in WEATHER_URLS]
+    days(weather, DERIVED_DIR / "days.parquet", force=args.force)
