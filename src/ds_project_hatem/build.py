@@ -3,6 +3,7 @@
 import argparse
 from pathlib import Path
 
+from ds_project_hatem.answer import answer
 from ds_project_hatem.derive import derive
 from ds_project_hatem.download import RAW_DIR, URL, download
 from ds_project_hatem.load import load
@@ -17,4 +18,5 @@ def main() -> None:
 
     raw = download(URL, RAW_DIR, force=args.force)
     counts = load(raw, DERIVED_DIR / "counts.parquet", force=args.force)
-    derive(counts, DERIVED_DIR / "place_year.parquet", force=args.force)
+    place_year = derive(counts, DERIVED_DIR / "place_year.parquet", force=args.force)
+    answer(place_year, DERIVED_DIR / "answer.parquet", force=args.force)

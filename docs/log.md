@@ -95,6 +95,6 @@ Die Einstellung „Automatically delete head branches“ ist eingeschaltet (dele
 
 **Test:** Antwort-Schritt auf den echten Daten laufen lassen. Die Orte nach den Regeln vom 2026-11-02 einstufen und die gewachsenen zählen.
 
-**Result:**
+**Result:** 8 von 10 vergleichbaren Orten sind gewachsen, 2 geschrumpft, 0 unverändert. Erwartung bestätigt.
 
-**Decision:**
+**Decision:** Die Antwort für die Stadt lautet „ja“. Sie gilt nur für die 10 vergleichbaren Orte. Die übrigen 34 Orte sind nicht vergleichbar und werden im Ergebnis mit Grund ausgewiesen.
