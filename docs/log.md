@@ -88,3 +88,13 @@ Die Einstellung „Automatically delete head branches“ ist eingeschaltet (dele
 - **Gewachsen:** mehr als +5 % Velos pro Tag. **Geschrumpft:** mehr als −5 %. Dazwischen **unverändert**. Ersetzt „keine Schwelle“ und „unverändert entfällt“ im Eintrag vom 2026-10-31.
 - **Antwort für die Stadt:** „ja“, wenn mehr als die Hälfte der vergleichbaren Orte gewachsen ist, sonst „nein“.
 - **ID-Wechsel:** bleibt bekannte Grenze, siehe Eintrag vom 2026-10-08.
+
+## Hypothesis · 2026-11-02 · growth among comparable places
+
+**Expected:** 8 von 10 vergleichbaren Orten sind gewachsen.
+
+**Test:** Antwort-Schritt auf den echten Daten laufen lassen. Die Orte nach den Regeln vom 2026-11-02 einstufen und die gewachsenen zählen.
+
+**Result:** 8 von 10 vergleichbaren Orten sind gewachsen, 2 geschrumpft, 0 unverändert. Erwartung bestätigt.
+
+**Decision:** Die Antwort für die Stadt lautet „ja“. Sie gilt nur für die 10 vergleichbaren Orte. Die übrigen 34 Orte sind nicht vergleichbar und werden im Ergebnis mit Grund ausgewiesen.
