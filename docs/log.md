@@ -115,6 +115,6 @@ Die Einstellung „Automatically delete head branches“ ist eingeschaltet (dele
 
 **Test:** Den Schritt answer_dry auf den echten Daten laufen lassen. Die Orte nach den Regeln vom 2026-11-02 einstufen und die gewachsenen zählen.
 
-**Result:**
+**Result:** Erwartung bestätigt. 6 von 10 vergleichbaren Orten sind auf trockenen Werktagen gewachsen, 2 geschrumpft, 2 unverändert. Auf allen Tagen waren es 8 von 10.
 
-**Decision:**
+**Decision:** Die Antwort auf trockenen Werktagen lautet ja. Sie bestätigt die Antwort auf allen Tagen, ist aber schwächer. Beide Antworten werden nebeneinander berichtet.
