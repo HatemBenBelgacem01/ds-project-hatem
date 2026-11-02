@@ -1,0 +1,8 @@
+﻿"Datum","Standort","Parameter","Intervall","Einheit","Wert","Status"
+"2020-03-02T00:00+0100","Zch_Stampfenbachstrasse","RainDur","d1","min",0,"bereinigt"
+"2020-03-02T00:00+0100","Zch_Stampfenbachstrasse","T","d1","°C",4.2,"bereinigt"
+"2020-03-03T00:00+0100","Zch_Stampfenbachstrasse","RainDur","d1","min",12.5,"bereinigt"
+"2020-03-04T00:00+0100","Zch_Stampfenbachstrasse","T","d1","°C",5.1,"bereinigt"
+"2020-03-05T00:00+0100","Zch_Rosengartenstrasse","RainDur","d1","min",0,"bereinigt"
+"2020-03-06T00:00+0100","Zch_Stampfenbachstrasse","RainDur","d1","min","","bereinigt"
+"2020-03-07T00:00+0100","Zch_Stampfenbachstrasse","RainDur","d1","min",0,"bereinigt"
