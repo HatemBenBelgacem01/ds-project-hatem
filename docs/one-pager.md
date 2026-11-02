@@ -41,7 +41,18 @@ Die Hypothese „genug Orte sind vergleichbar“ wurde nicht bestätigt: 10 von 
 4. Orte nach den Regeln oben als vergleichbar, gewachsen, geschrumpft oder unverändert einstufen.
 5. Ergebnis als Tabelle und einen Satz für die Stadt ausgeben.
 
-Zweite Runde, später: nur trockene Wochentage, mit Wetterdaten.
+## Zweite Runde: trockene Werktage
+
+Festgelegt am 2026-11-03, siehe docs/log.md.
+
+| Regel | Entscheidung |
+|---|---|
+| Werktag | Montag bis Freitag. Feiertage zählen mit |
+| Trocken | 0 Minuten Regen an dem Tag an der Station Zch_Stampfenbachstrasse. Ein fehlender Wert gilt als nicht trocken. Eine Station steht für die ganze Stadt |
+| Quelle | Tagesmittelwerte Meteo, eine Datei pro Jahr |
+| Orte und Jahre | dieselben 10 vergleichbaren Orte, 2019 und 2025. Band und Mehrheit bleiben |
+
+Die Erwartung von 90 trockenen Werktagen pro Ort und Jahr wurde bestätigt. Der kleinste Wert liegt bei 117 (2019) und 119 (2025).
 
 ## Non-goals
 
