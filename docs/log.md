@@ -69,3 +69,22 @@ Ruleset „Protect main“ (ID 26285361): Änderungen an main nur über Pull Req
 ## Decision · 2026-10-31 · delete merged branches automatically
 
 Die Einstellung „Automatically delete head branches“ ist eingeschaltet (delete_branch_on_merge: true). Gemergte Branches werden auf GitHub automatisch gelöscht. Damit korrigiert dieser Eintrag die Aussage „Automatisches Löschen gemergter Branches ist aus“ im Eintrag „repository settings“ vom selben Tag.
+
+## Hypothesis · 2026-11-02 · enough places are comparable
+
+**Expected:** Mindestens 80 % der 44 Orte sind vergleichbar, also mindestens 36 Orte.
+
+**Test:** Orte zählen, die in 2019 und 2025 an mindestens 300 Tagen Velodaten haben. Nur zählen, keine Veränderung.
+
+**Result:** 10 von 44 Orten sind in 2019 und 2025 an mindestens 300 Tagen vergleichbar (14 in 2019, 19 in 2025). Erwartung verfehlt.
+
+**Decision:** Die Regeln bleiben unverändert. Die Antwort bezieht sich nur auf die 10 Orte, die in 2019 und 2025 an mindestens 300 Tagen Velodaten haben. Die übrigen 34 Orte werden mit Grund ausgewiesen.
+
+## Decision · 2026-11-02 · rules for the answer
+
+- **Zählung:** nur Velos (VELO_IN + VELO_OUT). Ersetzt den Punkt zu Fussgängern im Eintrag vom 2026-10-31.
+- **Tag:** zählt, wenn mindestens eine Velo-Messung vorliegt.
+- **Vergleichbar:** mindestens 300 Tage mit Velodaten in 2019 und 2025.
+- **Gewachsen:** mehr als +5 % Velos pro Tag. **Geschrumpft:** mehr als −5 %. Dazwischen **unverändert**. Ersetzt „keine Schwelle“ und „unverändert entfällt“ im Eintrag vom 2026-10-31.
+- **Antwort für die Stadt:** „ja“, wenn mehr als die Hälfte der vergleichbaren Orte gewachsen ist, sonst „nein“.
+- **ID-Wechsel:** bleibt bekannte Grenze, siehe Eintrag vom 2026-10-08.
