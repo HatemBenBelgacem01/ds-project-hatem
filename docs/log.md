@@ -98,3 +98,10 @@ Die Einstellung „Automatically delete head branches“ ist eingeschaltet (dele
 **Result:** 8 von 10 vergleichbaren Orten sind gewachsen, 2 geschrumpft, 0 unverändert. Erwartung bestätigt.
 
 **Decision:** Die Antwort für die Stadt lautet „ja“. Sie gilt nur für die 10 vergleichbaren Orte. Die übrigen 34 Orte sind nicht vergleichbar und werden im Ergebnis mit Grund ausgewiesen.
+
+## Hypothesis · 2026-11-03 · enough dry weekdays remain
+
+**Expected:** 90 trockene Werktage mit Velodaten pro Ort und Jahr, an allen 10 Orten.
+**Test:** Für jeden der 10 Orte aus data/derived/answer.parquet und jedes der Jahre 2019 und 2025 zählen, wie viele Werktage trocken sind und Velodaten haben. Die Wetterdateien nur einmal herunterladen, außerhalb von data/raw.
+**Result:** Erwartung bestätigt. Alle 10 vergleichbaren Orte haben mindestens 117 trockene Werktage mit Velodaten im Jahr 2019 und mindestens 119 im Jahr 2025 (Erwartung: 90). Die Station hat insgesamt 120 (2019) und 130 (2025) trockene Werktage.
+**Decision:** Die Quelle darf in die Pipeline. Die Regeln für trockene Werktage bleiben wie festgelegt.
