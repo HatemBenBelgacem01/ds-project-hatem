@@ -108,3 +108,13 @@ Die Einstellung „Automatically delete head branches“ ist eingeschaltet (dele
 **Result:** Erwartung bestätigt. Alle 10 vergleichbaren Orte haben mindestens 117 trockene Werktage mit Velodaten im Jahr 2019 und mindestens 119 im Jahr 2025 (Erwartung: 90). Die Station hat insgesamt 120 (2019) und 130 (2025) trockene Werktage.
 
 **Decision:** Die Quelle darf in die Pipeline. Die Regeln für trockene Werktage bleiben wie festgelegt.
+
+## Hypothesis · 2026-11-03 · growth on dry weekdays
+
+**Expected:** 6 von 10 vergleichbaren Orten sind auf trockenen Werktagen gewachsen.
+
+**Test:** Den Schritt answer_dry auf den echten Daten laufen lassen. Die Orte nach den Regeln vom 2026-11-02 einstufen und die gewachsenen zählen.
+
+**Result:**
+
+**Decision:**
