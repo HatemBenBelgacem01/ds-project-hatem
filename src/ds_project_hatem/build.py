@@ -4,6 +4,7 @@ import argparse
 from pathlib import Path
 
 from ds_project_hatem.answer import answer
+from ds_project_hatem.answer_dry import answer_dry
 from ds_project_hatem.days import days
 from ds_project_hatem.derive import derive
 from ds_project_hatem.download import RAW_DIR, URL, download
@@ -27,4 +28,11 @@ def main() -> None:
     answer(place_year, DERIVED_DIR / "answer.parquet", force=args.force)
 
     weather = [download(url, RAW_DIR, force=args.force) for url in WEATHER_URLS]
-    days(weather, DERIVED_DIR / "days.parquet", force=args.force)
+    days_path = days(weather, DERIVED_DIR / "days.parquet", force=args.force)
+    answer_dry(
+        DERIVED_DIR / "counts.parquet",
+        days_path,
+        DERIVED_DIR / "answer.parquet",
+        DERIVED_DIR / "answer_dry.parquet",
+        force=args.force,
+    )
